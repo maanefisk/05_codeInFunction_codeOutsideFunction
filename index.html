@@ -8,13 +8,20 @@
 <div id="stedfortekst"></div>
 
 
+
+
 <script>
 var x = document.getElementById('stedfortekst')
 
-x.innerHTML += 'Tekst global ' + new Date().toTimeString() + '<br>';
+x.innerHTML += 'Tekst global ' + d + n + '<br>';
+
+var d = new Date();
+var n = new toTimeString();
+
+
 
 function runwhenloaded() {
-x.innerText += 'Tekst fra onload' + new Date().toTimeString() ;
+x.innerText += 'Tekst fra onload ' + d + n ;
 }
 
     
