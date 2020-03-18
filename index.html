@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="farger.css">
+    
+
+<body onload="runwhenloaded()">
+
+<div id="stedfortekst"></div>
+
+
+<script>
+var x = document.getElementById('stedfortekst')
+
+x.innerHTML += 'Tekst global ' + new Date().toTimeString() + '<br>';
+
+function runwhenloaded() {
+x.innerText += 'Tekst fra onload' + new Date().toTimeString() ;
+}
+
+    
+
+</script>
+</body>
+
+</html>
